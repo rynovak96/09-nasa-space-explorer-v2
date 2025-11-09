@@ -2,7 +2,7 @@
 const apodData = 'https://cdn.jsdelivr.net/gh/GCA-Classroom/apod/data.json';
 
 // Get references to the button and gallery elements
-const getImageBtn - document.getElementById('getImageBtn');
+const getImageBtn = document.getElementById('getImageBtn');
 const gallery = document.getElementById('gallery'); 
 
 // Add a click event to the button
@@ -78,7 +78,7 @@ function showModal(item) {
 
   // Add event to close the modal when button is clicked
   closeBtn.addEventListener('click', () => {
-    document.body.removeChild(modalOverlay_;
+    document.body.removeChild(modalOverlay); 
     }); 
 
     // Add event to close the modal when clicking outside the modal content 
@@ -89,7 +89,7 @@ function showModal(item) {
     }); 
 
     // Create the large image
-    const largeImg = document.create Element('img'); 
+    const largeImg = document.createElement('img'); 
     largeImg.src = item.url; 
     largeImg.alt = item.title; 
     largeImg.className = 'modal-image';
@@ -101,7 +101,7 @@ function showModal(item) {
     const date = document.createElement('p'); 
     date.textContent = 'Date: ${item.date}';
 
-    const explanation = document.create Element('p');
+    const explanation = document.createElement('p');
     explanation.textContent = item.explanation;
 
     // Add all elements to the modal content
