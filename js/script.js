@@ -116,4 +116,4 @@ function showModal(item) {
 
     // Add the modal overlay to the page
     document.body.appendChild(modalOverlay);
-}
+} 
